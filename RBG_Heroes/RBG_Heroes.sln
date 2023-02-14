@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBG_Heroes", "RBG_Heroes\RBG_Heroes.csproj", "{B84B3EF9-246C-466A-9A72-AAF062E6EF7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RGBHeroesUnitTest", "RGBHeroesUnitTest\RGBHeroesUnitTest.csproj", "{E8BDE60A-0161-43C7-BBFF-8F3C3A15F1EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B84B3EF9-246C-466A-9A72-AAF062E6EF7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84B3EF9-246C-466A-9A72-AAF062E6EF7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84B3EF9-246C-466A-9A72-AAF062E6EF7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84B3EF9-246C-466A-9A72-AAF062E6EF7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BDE60A-0161-43C7-BBFF-8F3C3A15F1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BDE60A-0161-43C7-BBFF-8F3C3A15F1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BDE60A-0161-43C7-BBFF-8F3C3A15F1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8BDE60A-0161-43C7-BBFF-8F3C3A15F1EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E7E18E1-60CE-43C9-BE75-528AF199C6D7}
+	EndGlobalSection
+EndGlobal
