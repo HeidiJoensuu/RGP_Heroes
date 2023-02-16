@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uafvCIchJKgl7jHA0qAn3R0jN8gh7cCT1oMNNkFqVYX3MCAFBFfl/Pvv9/7n2pWSw7q83lzpgXRvWirMS1bOrw==",
+  "dgSpecHash": "xHIXp/1GLez+x0f48O773OJQs61232CIZ9NLhZ45LbEfkLzBPW+H+VinyHw4HrPSSxlgdwAuZNDBIfSTWAoqgQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\HJoens\\Documents\\exams_C\\RGP_Heroes\\RBG_Heroes\\RBG_Heroes\\RBG_Heroes.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HJoens\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\HJoens\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\HJoens\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\HJoens\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.14\\microsoft.netcore.app.host.win-x64.6.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -12,9 +12,10 @@ namespace RBG_Heroes.Items
 
         public int WeaponDamage { get => weaponDamage; set => weaponDamage = value; }
         public WeaponType WeaponType { get; set; }
-        public Weapon() 
+        public Weapon(string name, int requiredLevel, int weaponDamage, WeaponType weaponType) : base(name, requiredLevel, SlotType.Weapon)
         {
-            base.Slot = SlotType.Weapon;
+            this.WeaponDamage = weaponDamage;
+            this.WeaponType = weaponType;
         }
     }
 }

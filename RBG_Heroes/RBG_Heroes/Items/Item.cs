@@ -12,15 +12,15 @@ namespace RBG_Heroes.Items
         protected int requiredLevel;
         protected SlotType slot;
 
-        public string Name { get => name; set => name = value; }
-        public int RequiredLevel { get => requiredLevel; set => requiredLevel = value; }
-        public SlotType Slot { get; set; }
-        public Item() { }
+        public string Name { get => name;}
+        public int RequiredLevel { get => requiredLevel;}
+        public SlotType Slot { get; }
 
-        public Item(string name, int requiredLevel, string slot)
+        public Item(string name, int requiredLevel, SlotType slot)
         {
             this.name = name;
             this.requiredLevel = requiredLevel;
+            this.Slot = slot;
         }
     }
 }

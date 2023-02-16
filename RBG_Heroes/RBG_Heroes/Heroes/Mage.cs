@@ -9,29 +9,23 @@ namespace RBG_Heroes.Heroes
 {
     public class Mage : Hero
     {
-        public Mage()
-        {
-            base.levelAttributes.Intelligence= 6;
-            base.validArmorTypes.AddRange(new List<Enum> { ArmorType.Cloth});
-            base.validWeaponTypes.AddRange(new List<Enum> { WeaponType.Staff, WeaponType.Wand });
-        }
+        public Mage(string name) : base(name, 1, 1, 1, 8, new List<Enum> { WeaponType.Staff, WeaponType.Wand }, new List<Enum> { ArmorType.Cloth }){}
 
         public override void LevelUp()
         {
             level++;
-            levelAttributes.IncreaseAttributes(strength: 5, dexterity: 1, intelligence: 1);
+            levelAttributes.IncreaseAttributes(strength: 1, dexterity: 1, intelligence: 5);
         }
 
         public override double Damage()
         {
             int weaponDamage = 1;
-            if (equipment[SlotType.Weapon] != null)
+            if (equipment.ContainsKey(SlotType.Weapon) && equipment[SlotType.Weapon] != null)
             {
                 Weapon weapon = (Weapon)equipment[SlotType.Weapon];
                 weaponDamage = weapon.WeaponDamage;
-
             }
-            double heroDamage = weaponDamage * (1 + TotalAttributes().Intelligence / 100);
+            double heroDamage = Math.Round(weaponDamage * (double)(1 + (double)TotalAttributes().Intelligence / 100),2);
             return heroDamage;
 
         }
@@ -39,13 +33,8 @@ namespace RBG_Heroes.Heroes
         public override string Display()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Name: {0}\n", Name);
-            sb.AppendFormat("Class: {0}\n", "Mage");
-            sb.AppendFormat("Level: {0}\n", Level);
-            sb.AppendFormat("Total strength: {0}\n", TotalAttributes().Strength);
-            sb.AppendFormat("Total dexterity: {0}\n", TotalAttributes().Dexterity);
-            sb.AppendFormat("Total intelligence: {0}\n", TotalAttributes().Intelligence);
-            sb.AppendFormat("Damage: {0}\n", Damage());
+            sb.AppendFormat("Name: {0}\nClass: {1}\nLevel: {2}\nTotal strength: {3}\nTotal dexterity: {4}\nTotal intelligence: {5}\nDamage: {6}",
+                Name, "Mage", Level, TotalAttributes().Strength, TotalAttributes().Dexterity, TotalAttributes().Intelligence, Damage());
             Console.WriteLine(sb.ToString());
             return sb.ToString();
         }

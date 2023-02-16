@@ -35,9 +35,3 @@ namespace RBG_Heroes.Attributes
         }
     }
 }
-/* It means that you need a method that increases the value of the instance of HeroAttribute.
-You can do this either by feeding in 3 different parameters (mostly likely int) 
-for the amount to increase each attribute by, or you can use another instance of 
-HeroAttribute and return their sum.
-If you do this in the latter way, you might want to look at
-operator overloading (specifically the + operator) */
