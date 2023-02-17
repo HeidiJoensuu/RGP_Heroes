@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RBG_Heroes.Items
 {
+    /// <summary>
+    /// List of different slot types.
+    /// </summary>
     public enum SlotType
     {
         Weapon,

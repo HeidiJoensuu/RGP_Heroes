@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RBG_Heroes.Exceptions
 {
+    /// <summary>
+    /// Invalid Armor Exception error handler
+    /// </summary>
     public class InvalidArmorException: Exception
     {
     }

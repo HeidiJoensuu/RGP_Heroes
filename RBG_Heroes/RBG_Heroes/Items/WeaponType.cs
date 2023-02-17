@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RBG_Heroes.Items
 {
+    /// <summary>
+    /// List of different weapon types.
+    /// </summary>
     public enum WeaponType
     {
         Axe,

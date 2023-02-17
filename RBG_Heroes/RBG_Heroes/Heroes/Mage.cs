@@ -3,12 +3,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace RBG_Heroes.Heroes
 {
+    /// <summary>
+    /// Mage class. Extends <see cref="Hero"/> abstract class.
+    /// </summary>
     public class Mage : Hero
     {
+        /// <summary>
+        /// Creates new instance of <see cref="Mage"/>-hero
+        /// </summary>
+        /// <param name="name">Hero's new name</param>
         public Mage(string name) : base(name, 1, 1, 1, 8, new List<Enum> { WeaponType.Staff, WeaponType.Wand }, new List<Enum> { ArmorType.Cloth }){}
 
         public override void LevelUp()
@@ -35,7 +43,6 @@ namespace RBG_Heroes.Heroes
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("Name: {0}\nClass: {1}\nLevel: {2}\nTotal strength: {3}\nTotal dexterity: {4}\nTotal intelligence: {5}\nDamage: {6}",
                 Name, "Mage", Level, TotalAttributes().Strength, TotalAttributes().Dexterity, TotalAttributes().Intelligence, Damage());
-            Console.WriteLine(sb.ToString());
             return sb.ToString();
         }
     }

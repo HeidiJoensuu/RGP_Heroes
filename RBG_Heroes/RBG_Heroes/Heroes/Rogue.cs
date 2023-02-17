@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace RBG_Heroes.Heroes
 {
+    /// <summary>
+    /// Rogue class. Extends <see cref="Item"/>
+    /// </summary>
     public class Rogue : Hero
     {
+        /// <summary>
+        /// Creates new instance of <see cref="Rogue"/>-hero
+        /// </summary>
+        /// <param name="name">Hero's new name</param>
         public Rogue(string name): base(name, 1,6,2,1, new List<Enum> { WeaponType.Sword, WeaponType.Dagger }, new List<Enum> { ArmorType.Mail, ArmorType.Leather }) {}
 
         public override void LevelUp()
@@ -26,7 +33,6 @@ namespace RBG_Heroes.Heroes
                 weaponDamage = weapon.WeaponDamage;
             }
             double heroDamage = Math.Round(weaponDamage * (double)(1 + (double)TotalAttributes().Dexterity / 100),2);
-            Console.WriteLine(heroDamage);
             return heroDamage;
 
         }
@@ -36,7 +42,6 @@ namespace RBG_Heroes.Heroes
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("Name: {0}\nClass: {1}\nLevel: {2}\nTotal strength: {3}\nTotal dexterity: {4}\nTotal intelligence: {5}\nDamage: {6}",
                 Name, "Rogue", Level, TotalAttributes().Strength, TotalAttributes().Dexterity, TotalAttributes().Intelligence, Damage());
-            Console.WriteLine(sb.ToString());
             return sb.ToString();
         }
     }

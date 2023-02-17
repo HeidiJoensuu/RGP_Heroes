@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace RBG_Heroes.Heroes
 {
+    /// <summary>
+    /// Hero interface
+    /// </summary>
     internal interface IHero
     {
         void LevelUp();
