@@ -4,7 +4,7 @@ Idea of this project was to create console application by using C#.
 The goal was to be able to create new heroes, armours and weapons.
 
 ## Class interaction diagram (current)
-![alt text](/ClassInteractionDiagram.PNG)
+![alt text](/Assets/ClassInteractionDiagram.PNG)
 
 ## Folder structure
 
